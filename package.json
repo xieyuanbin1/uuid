@@ -1,0 +1,21 @@
+{
+  "name": "@edgeros/uuid",
+  "version": "1.0.1",
+  "description": "Simplified version of uuid v4",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "eslint"
+  },
+  "keywords": [
+    "uuid",
+    "nodejs",
+    "jsre"
+  ],
+  "author": "xybin1990@163.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-standard": "^16.0.3"
+  }
+}
