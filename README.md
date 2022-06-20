@@ -1,7 +1,8 @@
-## uuid
+## UUID
 
-Simplified version of uuid v4
+Simplified version of uuid v4.
 
+use in EdgerOS.
 
 ## Install
 ```shell
