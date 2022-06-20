@@ -1,11 +1,12 @@
 {
   "name": "@edgeros/uuid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simplified version of uuid v4",
   "main": "./dist/index.min.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "eslint",
+    "lint": "eslint",
+    "test": "tape test/**/*.js | tap-spec",
     "build": "gulp"
   },
   "keywords": [
@@ -23,6 +24,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-size": "^4.0.1",
     "gulp-tar": "^3.1.0",
-    "gulp-uglify-es": "^3.0.0"
+    "gulp-uglify-es": "^3.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.5.3"
   }
 }

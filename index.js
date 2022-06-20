@@ -43,12 +43,25 @@ function unsafeStringify (arr, offset = 0) {
   ).toLowerCase()
 }
 
-module.exports = function () {
+module.exports = function (options, buf, offset) {
   if (crypto.randomUUID) {
     return crypto.randomUUID();
   }
-  const rnds = rng()
+  options = options || {}
+  const rnds = options.random || (options.rng || rng)();
   rnds[6] = (rnds[6] & 0x0f) | 0x40
   rnds[8] = (rnds[8] & 0x3f) | 0x80
+
+  // Copy bytes to buffer, if provided
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
   return unsafeStringify(rnds)
 }
