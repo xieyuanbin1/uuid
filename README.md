@@ -2,7 +2,7 @@
 
 Simplified version of uuid v4.
 
-use in EdgerOS.
+use in EdgerOS.(support Node.js, no browser support)
 
 ## Install
 ```shell
