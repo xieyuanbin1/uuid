@@ -1,5 +1,5 @@
 interface Options {
-  random?: Array;
-  rng?: () => Array;
+  random?: ArrayLike<number> | undefined;
+  rng?: (() => ArrayLike<number>) | undefined;
 }
-export default function uuid(options?: Options , buf?: Buffer | Array, offset?: number = 0): string;
+export default function uuid(options?: Options , buf?: ArrayLike<number>, offset?: number): string;

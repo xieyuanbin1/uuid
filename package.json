@@ -1,6 +1,6 @@
 {
   "name": "@edgeros/uuid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simplified version of uuid v4",
   "main": "./dist/index.min.js",
   "types": "./index.d.ts",
