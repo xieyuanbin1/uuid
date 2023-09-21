@@ -1,6 +1,7 @@
 .gitignore
 package-lock.json
 .idea
+.eslintrc.json
 
 index.js
 gulpfile.js
