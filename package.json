@@ -1,13 +1,14 @@
 {
   "name": "@edgeros/uuid",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simplified version of uuid v4",
   "main": "./dist/index.min.js",
   "types": "./index.d.ts",
   "scripts": {
     "lint": "eslint",
     "test": "tape test/**/*.js | tap-spec",
-    "build": "gulp"
+    "build": "gulp",
+    "release": "npm run build && npm publish"
   },
   "keywords": [
     "uuid",
